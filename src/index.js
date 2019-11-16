@@ -22,6 +22,11 @@ global.startApp = container => {
 
       const totalScoreDom = getTotalScoreDom(totalScore);
       container.appendChild(totalScoreDom);
+
+      const gameOverAudio = new Audio(
+        'https://themushroomkingdom.net/sounds/wav/smw/smw_lost_a_life.wav'
+      );
+      gameOverAudio.play();
     }
   };
 

@@ -39,12 +39,39 @@ body {
           }
 
           &.coin {
-            background-image: url('https://media.giphy.com/media/t5ZZpndC9rFi6vxuiv/giphy.gif');
+            background-image: url('../dist/images/coin.gif');
             background-size: $col-width $col-height;
           }
 
           &.no-coin {
             background: #fff;
+          }
+
+          &.arrow {
+            background-image: url('../dist/images/arrow.png');
+            background-size: $col-width $col-height;
+            background-color: transparent;
+            &.left {
+              transform: rotate(180deg);
+            }
+            &.top {
+              transform: rotate(270deg);
+            }
+            &.bottom {
+              transform: rotate(90deg);
+            }
+            &.top-right {
+              transform: rotate(325deg);
+            }
+            &.top-left {
+              transform: rotate(225deg);
+            }
+            &.bottom-right {
+              transform: rotate(45deg);
+            }
+            &.bottom-left {
+              transform: rotate(135deg);
+            }
           }
         }
       }
