@@ -1,0 +1,24 @@
+{
+  "name": "diamond-sweeper",
+  "version": "1.0.0",
+  "description": "quintype-frontend-coding-challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirajmchauhan/diamond-sweeper.git"
+  },
+  "keywords": [
+    "frontend",
+    "js",
+    "coding"
+  ],
+  "author": "Niraj Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirajmchauhan/diamond-sweeper/issues"
+  },
+  "homepage": "https://github.com/nirajmchauhan/diamond-sweeper#readme"
+}
