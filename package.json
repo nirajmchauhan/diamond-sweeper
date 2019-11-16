@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --mode development",
-    "test": "jest --env=jsdom",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix"
   },
@@ -28,6 +29,7 @@
     "@babel/core": "^7.7.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-config-google": "^0.14.0",
@@ -70,5 +72,8 @@
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
     }
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
