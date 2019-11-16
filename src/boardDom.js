@@ -7,7 +7,7 @@ const getRowDom = index => {
 
 const getColDom = (rowIndex, colIndex) => {
   const col = document.createElement('div');
-  col.setAttribute('class', 'col question-block');
+  col.setAttribute('class', 'col question-block nes-pointer');
   col.setAttribute('data-row-index', rowIndex);
   col.setAttribute('data-col-index', colIndex);
   return col;

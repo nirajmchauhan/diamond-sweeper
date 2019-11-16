@@ -34,7 +34,6 @@ body {
           margin: 5px;
 
           &.question-block {
-            cursor: pointer;
             background-image: url('../dist/images/question.gif');
             background-size: $col-width $col-height;
           }
