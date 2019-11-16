@@ -1,6 +1,6 @@
 import './index.scss';
 import { getBoard } from './board';
-import { getBoardDom } from './boardDom';
+import { getBoardDom, getTotalScoreDom, isGameOver } from './boardDom';
 import { checkForCoin } from './boardEventHandler';
 
 global.startApp = container => {
@@ -15,6 +15,14 @@ global.startApp = container => {
   const clickHandler = ({ target }) => {
     checkForCoin(target, board);
     target.removeEventListener('click', clickHandler);
+
+    if (isGameOver()) {
+      const totalScore = document.querySelectorAll('.question-block').length;
+      document.getElementsByClassName('board')[0].remove();
+
+      const totalScoreDom = getTotalScoreDom(totalScore);
+      container.appendChild(totalScoreDom);
+    }
   };
 
   document.querySelectorAll('.question-block').forEach(tile => {

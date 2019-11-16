@@ -27,3 +27,31 @@ export const getBoardDom = board => {
 
   return boardDom;
 };
+
+export const isGameOver = () => {
+  return document.querySelectorAll('.coin').length === 8;
+};
+
+export const getTotalScoreDom = score => {
+  const totalScoreDom = document.createElement('div');
+  totalScoreDom.setAttribute(
+    'class',
+    'nes-container is-rounded is-dark is-centered'
+  );
+
+  const totalScoreMessageDom = document.createElement('p');
+  totalScoreMessageDom.textContent = 'Game over!!!';
+
+  const totalScoreSummaryDom = document.createElement('p');
+  totalScoreSummaryDom.textContent = `Your total score is ${score}. Please reload the page to start a new game`;
+
+  const trophyIcon = document.createElement('i');
+  trophyIcon.setAttribute('class', 'nes-icon trophy is-large');
+
+  totalScoreDom.appendChild(trophyIcon);
+
+  totalScoreDom.appendChild(totalScoreMessageDom);
+  totalScoreDom.appendChild(totalScoreSummaryDom);
+
+  return totalScoreDom;
+};
