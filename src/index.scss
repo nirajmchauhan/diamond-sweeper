@@ -38,6 +38,15 @@ body {
             background-image: url('../dist/images/question.gif');
             background-size: $col-width $col-height;
           }
+
+          &.coin {
+            background-image: url('https://media.giphy.com/media/t5ZZpndC9rFi6vxuiv/giphy.gif');
+            background-size: $col-width $col-height;
+          }
+
+          &.no-coin {
+            background: #fff;
+          }
         }
       }
     }
