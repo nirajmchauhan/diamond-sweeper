@@ -21,6 +21,19 @@ module.exports = {
         test: /\.scss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, 'src/'),
+              useRelativePaths: true,
+            },
+          },
+        ],
+      },
     ],
   },
 };

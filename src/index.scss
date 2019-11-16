@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
-
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Press Start 2P', cursive;
+  background-color: #5e91fe;
+
+  #root {
+    background-image: url('https://art.pixilart.com/4ed879c9590c7f7.png');
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+
+    .board {
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: flex-start;
+
+        .col {
+          $col-width: 60px;
+          $col-height: 60px;
+
+          width: $col-width;
+          height: $col-height;
+          margin: 5px;
+
+          &.question-block {
+            cursor: pointer;
+            background-image: url('../dist/images/question.gif');
+            background-size: $col-width $col-height;
+          }
+        }
+      }
+    }
+  }
 }
