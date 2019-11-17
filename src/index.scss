@@ -8,7 +8,7 @@ body {
   background-color: #5e91fe;
 
   #root {
-    background-image: url('https://art.pixilart.com/4ed879c9590c7f7.png');
+    background-image: url('../dist/images/brick.png');
     background-repeat: repeat-x;
     background-position: left bottom;
     background-size: 30px;
@@ -17,6 +17,9 @@ body {
     align-items: center;
     min-height: 100vh;
     height: 100%;
+    @media screen and (max-width: 750px) {
+      background-image: none;
+    }
 
     .board {
       .row {
@@ -26,21 +29,28 @@ body {
         justify-content: flex-start;
 
         .col {
-          $col-width: 60px;
-          $col-height: 60px;
-
-          width: $col-width;
-          height: $col-height;
+          width: 60px;
+          height: 60px;
           margin: 5px;
+
+          @media screen and (max-width: 750px) {
+            width: 35px;
+            height: 35px;
+          }
+
+          @media screen and (max-width: 350px) {
+            width: 25px;
+            height: 25px;
+          }
 
           &.question-block {
             background-image: url('../dist/images/question.gif');
-            background-size: $col-width $col-height;
+            background-size: 100%;
           }
 
           &.coin {
             background-image: url('../dist/images/coin.gif');
-            background-size: $col-width $col-height;
+            background-size: 100%;
           }
 
           &.no-coin {
@@ -49,7 +59,7 @@ body {
 
           &.arrow {
             background-image: url('../dist/images/arrow.png');
-            background-size: $col-width $col-height;
+            background-size: 100%;
             background-color: transparent;
             &.left {
               transform: rotate(180deg);
