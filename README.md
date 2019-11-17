@@ -14,7 +14,7 @@
 - In chrome open `http://localhost:3000/`
 
 ## Development
-- `npm start` will start dev server on port `3000`
+- `npm start` will start dev server on port `3000` with hot reloading
 - `npm run start:prod` will start server with minification & gzipping.
 - `npm run lint` will check for linting & prettier errors
 - `npm run lint:fix` will auto fix linting & prettier errors
