@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/js'),
   },
   devServer: {
+    host: '0.0.0.0',
     contentBase: path.join(__dirname, 'dist'),
     port: 3000,
   },
