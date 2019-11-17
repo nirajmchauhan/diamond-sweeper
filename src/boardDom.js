@@ -10,6 +10,7 @@ const getColDom = (rowIndex, colIndex) => {
   col.setAttribute('class', 'col question-block nes-pointer');
   col.setAttribute('data-row-index', rowIndex);
   col.setAttribute('data-col-index', colIndex);
+  col.setAttribute('role', "button");
   return col;
 };
 
