@@ -13,4 +13,10 @@
 - Run the docker container: `docker run -p 3000:3000 diamond-sweeper:latest`
 - In chrome open `http://localhost:3000/`
 
-
+## Development
+- `npm start` will start dev server on port `3000`
+- `npm run start:prod` will start server with minification & gzipping.
+- `npm run lint` will check for linting & prettier errors
+- `npm run lint:fix` will auto fix linting & prettier errors
+- `npm test` for running all tests
+- `npm run test:watch` for running all tests in watch mode
