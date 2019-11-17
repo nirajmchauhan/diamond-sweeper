@@ -1,6 +1,8 @@
-import { get, concat, toNumber } from 'lodash';
-const coinAudio = new Audio("https://themushroomkingdom.net/sounds/wav/smw/smw_coin.wav");
-const gameOver = new Audio("https://themushroomkingdom.net/sounds/wav/smw/smw_coin.wav");
+import { concat, get, toNumber } from 'lodash';
+
+const coinAudio = new Audio(
+  'https://themushroomkingdom.net/sounds/wav/smw/smw_coin.wav'
+);
 
 const getNearestLocationByLevel = (rowIndex, colIndex, level) => {
   return [
