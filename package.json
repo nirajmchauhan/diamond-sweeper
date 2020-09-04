@@ -41,7 +41,7 @@
     "file-loader": "^4.2.0",
     "jest": "^24.9.0",
     "jest-transform-stub": "^2.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "prettier": "1.19.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
